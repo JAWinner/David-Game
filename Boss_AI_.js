@@ -12,8 +12,7 @@ static var projectile : object;
 Rigidbody2D projectile = (Instantiate(obj, pos, rot) as GameObject).GetComponent<Rigidbody2D>();
 projectile.velocity = (right ? Vector2.right : -Vector2.right);
 }
-[Property]
-public var int = loadlevel(5); 
+
 [Property] 
 static var boss = loadlevel(5);
 [Property]

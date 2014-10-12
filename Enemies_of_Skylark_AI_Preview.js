@@ -1,3 +1,4 @@
+   
   var distance;
     var target : Transform;    
     var lookAtDistance = 15.0;
