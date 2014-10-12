@@ -29,8 +29,14 @@
     renderer.material.color = Color.red;
     }
 }
- 
- 
+static void destroy(){
+var enemy = Rect(10,10,10,10); 
+if ( player.gameobject.tag == "jerk"){
+if( player.gameobject.tag > rect.y)
+enemy.destroy(); 
+}
+}
+
 function lookAt ()
 {
 var rotation = Quaternion.LookRotation(target.position - transform.position);
