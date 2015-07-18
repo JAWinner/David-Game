@@ -1,0 +1,17 @@
+using UnityEngine;
+using System.Collections;
+
+public class gravityswitch : MonoBehaviour {
+	float gravity = -9.8f;                                            // Gravity set number Gravity must be off for rigid
+	GameObject player;
+		void Update () 
+		{
+			player.rigidbody.velocity.y = gravity * Time.deltaTime;       //Establish Gravity
+		}
+		
+		public void ReverseGravity()
+		{
+			if (Input.GetKeyDown ("x"))                                   // Basiclly turns off gravity when X is pressed
+					gravity = -gravity;
+		}
+	}
