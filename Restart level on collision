@@ -1,0 +1,10 @@
+using UnityEngine;
+using System.Collections;
+
+public class Schmoe : MonoBehaviour {
+	void OnCollisionEnter(Collision col){
+		if(col.gameObject.name == "Obstacle"){
+			Application.LoadLevel(0);
+		}
+	}
+}
